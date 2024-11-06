@@ -1,0 +1,133 @@
+/* Table Styles */
+table {
+    width: 100%;
+    border-collapse: collapse;
+    margin: 25px 0;
+    font-size: 18px;
+    text-align: left;
+    animation: fadeIn 1s ease-in-out;
+}
+
+th, td {
+    padding: 12px 15px;
+    border: 1px solid #ddd;
+    animation: fadeIn 1s ease-in-out;
+}
+
+th {
+    background-color: #4CAF50; /* Green background for header */
+    color: white;
+}
+
+tr:nth-child(even) {
+    background-color: #f9f9f9;
+}
+
+tr:hover {
+    background-color: #f1f1f1;
+    animation: highlight 0.5s ease-in-out;
+}
+
+/* Form Styles */
+form {
+    max-width: 600px;
+    margin: 20px auto;
+    padding: 20px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    background-color: #f9f9f9;
+    animation: slideIn 1s ease-in-out;
+}
+
+form label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: bold;
+}
+
+form input[type="text"],
+form input[type="email"],
+form input[type="password"],
+form input[type="date"],
+form textarea,
+form select {
+    width: calc(100% - 22px); /* Adjust width to fit within the form border */
+    padding: 10px;
+    margin-bottom: 15px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form input[type="submit"] {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: fadeIn 1s ease-in-out;
+}
+
+form input[type="submit"]:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
+
+/* Keyframes for animations */
+@keyframes fadeIn {
+    from {
+        opacity: 0;
+    }
+    to {
+        opacity: 1;
+    }
+}
+
+@keyframes slideIn {
+    from {
+        transform: translateY(-20px);
+        opacity: 0;
+    }
+    to {
+        transform: translateY(0);
+        opacity: 1;
+    }
+}
+
+@keyframes highlight {
+    from {
+        background-color: #f1f1f1;
+    }
+    to {
+        background-color: #e0e0e0;
+    }
+}
+
+form label.titre {
+    text-align: center;
+    font-size: 24px;
+    display: block;
+    margin-bottom: 20px;
+}
+
+div.menu {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-direction: row;
+    width: 100%;
+}
+
+button {
+    background-color: #4CAF50; /* Green background for submit button */
+    color: white;
+    padding: 10px 20px;
+    border: none;
+    border-radius: 4px;
+    cursor: pointer;
+    animation: fadeIn 1s ease-in-out;
+}
+
+button:hover {
+    background-color: #45a049; /* Darker green on hover */
+}
